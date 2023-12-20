@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react'
 import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+// import { Link, useParams } from 'react-router-dom'
+import Link from "next/link";
 import { pageTitle } from '../../helper'
 import Cta from '../Cta'
 import PageHeading from '../PageHeading'

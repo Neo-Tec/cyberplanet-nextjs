@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import Link from "next/link";
 
 export default function MenuWidget({menuItems, menuHeading, variant}) {
   return (

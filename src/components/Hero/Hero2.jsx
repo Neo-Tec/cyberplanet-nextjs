@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import Link from "next/link";
 import Div from '../Div'
 
 export default function Hero2({data, phoneNumber, email}) {
@@ -16,7 +17,7 @@ export default function Hero2({data, phoneNumber, email}) {
           {data.map((item,index)=> (
             <Div key={index} className={`cs-hero_tab_item cs-hover_tab ${active===index?'active':''}`}>
               <Div className="cs-hero_tab_img cs-bg" style={{backgroundImage: `url(${item.imageUrl})`}} />
-              <h2 onMouseEnter={() => handelActive(index)}><Link to={item.href}>{item.title}</Link></h2>
+              <h2 onMouseEnter={() => handelActive(index)}><a to={item.href}>{item.title}</a></h2>
             </Div>
           ))}
         </Div>

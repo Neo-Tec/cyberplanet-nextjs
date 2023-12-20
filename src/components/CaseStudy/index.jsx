@@ -1,6 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import Link from "next/link";
 import Div from '../Div';
 
 export default function CaseStudy({ title, bgUrl, variant, href }) {
@@ -11,7 +12,7 @@ export default function CaseStudy({ title, bgUrl, variant, href }) {
         <Div className="cs-bg" style={{ backgroundImage: `url(${bgUrl})` }} />
       </Div>
       <h2 className="cs-case_study_title">
-        <Link to={href}>{parse(title)}</Link>
+        <a to={href}>{parse(title)}</a>
       </h2>
     </Div>
   );

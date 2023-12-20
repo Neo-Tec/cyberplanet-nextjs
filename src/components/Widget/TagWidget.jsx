@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import Link from "next/link";
 import Div from '../Div'
 
 export default function TagWidget({title, data}) {
