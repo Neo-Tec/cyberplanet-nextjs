@@ -1,53 +1,55 @@
-import React, { useEffect } from 'react';
-import Card from '../Card';
-import FunFact from '../FunFact';
-import Hero from '../Hero';
-import Div from '../Div';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
-import Cta from '../Cta';
-import LogoList from '../LogoList';
-import MovingText from '../MovingText';
-import PortfolioSlider from '../Slider/PortfolioSlider';
-import PostSlider from '../Slider/PostSlider';
-import TestimonialSlider from '../Slider/TestimonialSlider';
-import TeamSlider from '../Slider/TeamSlider';
-import VideoModal from '../VideoModal';
-import TimelineSlider from '../Slider/TimelineSlider';
-import { pageTitle } from '../../helper';
+"use client";
+
+import React, { useEffect } from "react";
+import Card from "../Card";
+import FunFact from "../FunFact";
+import Hero from "../Hero";
+import Div from "../Div";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
+import Cta from "../Cta";
+import LogoList from "../LogoList";
+import MovingText from "../MovingText";
+import PortfolioSlider from "../Slider/PortfolioSlider";
+import PostSlider from "../Slider/PostSlider";
+import TestimonialSlider from "../Slider/TestimonialSlider";
+import TeamSlider from "../Slider/TeamSlider";
+import VideoModal from "../VideoModal";
+import TimelineSlider from "../Slider/TimelineSlider";
+import { pageTitle } from "../../helper";
 
 export default function Home() {
-  pageTitle('Home');
+  pageTitle("Home");
 
   // Hero Social Links
   const heroSocialLinks = [
     {
-      name: 'Behance',
-      links: '/',
+      name: "Behance",
+      links: "/",
     },
     {
-      name: 'Twitter',
-      links: '/',
+      name: "Twitter",
+      links: "/",
     },
   ];
 
   // FunFact Data
   const funfaceData = [
     {
-      title: 'Global Happy Clients',
-      factNumber: '40K',
+      title: "Global Happy Clients",
+      factNumber: "40K",
     },
     {
-      title: 'Project Completed',
-      factNumber: '50K',
+      title: "Project Completed",
+      factNumber: "50K",
     },
     {
-      title: 'Team Members',
-      factNumber: '245',
+      title: "Team Members",
+      factNumber: "245",
     },
     {
-      title: 'Digital products',
-      factNumber: '550',
+      title: "Digital products",
+      factNumber: "550",
     },
   ];
 

@@ -3,7 +3,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import "./team.scss";
-// import { Link } from 'react-router-dom';
+// import {Link} from "next/link"
 import Link from "next/link";
 import Div from "../Div";
 

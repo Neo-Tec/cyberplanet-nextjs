@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 import Header from "@/components/Header";
 import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
+import Home from "@/components/Pages/Home";
 
-const inter = Inter({ subsets: ["latin"] });
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "../scss/index.scss";
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <>
           <Header variant={""} />
+          <Home />
           {children}
           <CustomCursor />
           <Footer />

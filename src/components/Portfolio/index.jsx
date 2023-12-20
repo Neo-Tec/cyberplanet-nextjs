@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
+// import {Link} from "next/link"
 import Link from "next/link";
 import Div from "../Div";
 import "./portfolio.scss";
