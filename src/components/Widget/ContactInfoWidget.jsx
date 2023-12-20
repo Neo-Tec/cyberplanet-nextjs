@@ -16,7 +16,7 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          +44 454 7800 112
+          +91 7630033481
         </li>
         <li>
           {withIcon ? (
@@ -26,7 +26,7 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          infotech@arino.com
+          official.cyberplanet@gmail.com
         </li>
         <li>
           {withIcon ? (
