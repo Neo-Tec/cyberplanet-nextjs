@@ -1,8 +1,8 @@
-import React from 'react';
-import parse from 'html-react-parser';
+import React from "react";
+import parse from "html-react-parser";
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import Div from '../Div';
+import Div from "../Div";
 
 export default function CaseStudy({ title, bgUrl, variant, href }) {
   return (
@@ -12,7 +12,7 @@ export default function CaseStudy({ title, bgUrl, variant, href }) {
         <Div className="cs-bg" style={{ backgroundImage: `url(${bgUrl})` }} />
       </Div>
       <h2 className="cs-case_study_title">
-        <a to={href}>{parse(title)}</a>
+        <a href={href}>{parse(title)}</a>
       </h2>
     </Div>
   );

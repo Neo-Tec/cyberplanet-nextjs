@@ -9,22 +9,22 @@ export default function Pagination() {
   return (
     <ul className="cs-pagination_box cs-center cs-white_color cs-mp0 cs-semi_bold">
       <li>
-        <Link className="cs-pagination_item cs-center active" to="/blog">
+        <Link className="cs-pagination_item cs-center active" href="/blog">
           1
         </Link>
       </li>
       <li>
-        <Link className="cs-pagination_item cs-center" to="/blog">
+        <Link className="cs-pagination_item cs-center" href="/blog">
           2
         </Link>
       </li>
       <li>
-        <Link className="cs-pagination_item cs-center" to="/blog">
+        <Link className="cs-pagination_item cs-center" href="/blog">
           3
         </Link>
       </li>
       <li>
-        <Link className="cs-pagination_item cs-center" to="/blog">
+        <Link className="cs-pagination_item cs-center" href="/blog">
           4
         </Link>
       </li>

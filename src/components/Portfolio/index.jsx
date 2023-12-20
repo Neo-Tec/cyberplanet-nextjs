@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import Div from '../Div';
-import './portfolio.scss';
+import Div from "../Div";
+import "./portfolio.scss";
 
 export default function Portfolio({ href, src, title, subtitle, variant }) {
   return (
     <Link
-      to={href}
-      className={`cs-portfolio cs-bg ${variant ? variant : 'cs-style1'}`}
+      href={href}
+      className={`cs-portfolio cs-bg ${variant ? variant : "cs-style1"}`}
     >
       <>
         <Div className="cs-portfolio_hover" />

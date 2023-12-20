@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Div from '../Div';
-import './movingtext.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import Div from "../Div";
+import "./movingtext.scss";
 
 export default function MovingText2({ data, reverseDirection }) {
   return (
@@ -10,13 +10,13 @@ export default function MovingText2({ data, reverseDirection }) {
         <Div
           className={
             reverseDirection
-              ? 'cs-moving_text cs-reverse_animation'
-              : 'cs-moving_text'
+              ? "cs-moving_text cs-reverse_animation"
+              : "cs-moving_text"
           }
         >
           {data.map((item, index) => (
             <>
-              <Link key={index} to={item.href}>
+              <Link key={index} href={item.href}>
                 {item.title}
               </Link>
               -
@@ -26,13 +26,13 @@ export default function MovingText2({ data, reverseDirection }) {
         <Div
           className={
             reverseDirection
-              ? 'cs-moving_text cs-reverse_animation'
-              : 'cs-moving_text'
+              ? "cs-moving_text cs-reverse_animation"
+              : "cs-moving_text"
           }
         >
           {data.map((item, index) => (
             <>
-              <Link key={index} to={item.href}>
+              <Link key={index} href={item.href}>
                 {item.title}
               </Link>
               -

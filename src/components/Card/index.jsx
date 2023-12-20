@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 // import { Link } from 'react-router-dom'
 import Link from "next/link";
-import Div from '../Div'
-import './card.scss'
+import Div from "../Div";
+import "./card.scss";
 
-export default function Card({title, link, src, alt}) {
+export default function Card({ title, link, src, alt }) {
   return (
-    <a to={link} className="cs-card cs-style1">
+    <a href={link} className="cs-card cs-style1">
       <>
         <img src={src} alt={alt} />
         <Div className="cs-card_overlay" />
@@ -16,5 +16,5 @@ export default function Card({title, link, src, alt}) {
         </Div>
       </>
     </a>
-  )
+  );
 }
