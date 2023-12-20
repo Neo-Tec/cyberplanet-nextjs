@@ -1,12 +1,14 @@
-import React from 'react';
-import { Icon } from '@iconify/react';
-import { Link } from 'react-router-dom';
+"use client";
+
+import React from "react";
+import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 export default function Button({ btnLink, btnText, variant, icon }) {
   return (
     <a
       to={btnLink}
-      className={variant ? `cs-text_btn ${variant}` : 'cs-text_btn'}
+      className={variant ? `cs-text_btn ${variant}` : "cs-text_btn"}
     >
       <>
         <span>{btnText}</span>

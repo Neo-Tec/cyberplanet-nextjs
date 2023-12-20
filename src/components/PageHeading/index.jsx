@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import Div from '../Div';
+import Div from "../Div";
 
 export default function PageHeading({ title, bgSrc, pageLinkText }) {
   return (
@@ -14,7 +14,7 @@ export default function PageHeading({ title, bgSrc, pageLinkText }) {
           <h1 className="cs-page_title cs-font_50 cs-white_color">{title}</h1>
           <ol className="breadcrumb text-uppercase">
             <li className="breadcrumb-item">
-              <Link to="/">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="breadcrumb-item active">{pageLinkText}</li>
           </ol>

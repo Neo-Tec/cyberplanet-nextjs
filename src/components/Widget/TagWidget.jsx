@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
 // import { Link } from 'react-router-dom'
 import Link from "next/link";
-import Div from '../Div'
+import Div from "../Div";
 
-export default function TagWidget({title, data}) {
+export default function TagWidget({ title, data }) {
   return (
     <>
       <h4 className="cs-sidebar_widget_title">{title}</h4>
       <Div className="tagcloud">
-        {data?.map((tag, index)=> (
-          <Link to={tag.url} className="tag-cloud-link" key={index}>{tag.title}</Link>
+        {data?.map((tag, index) => (
+          <Link href={tag.url} className="tag-cloud-link" key={index}>
+            {tag.title}
+          </Link>
         ))}
       </Div>
     </>
-  )
+  );
 }

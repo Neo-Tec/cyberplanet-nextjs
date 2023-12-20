@@ -1,58 +1,60 @@
-import React from 'react';
-import Portfolio from '../Portfolio';
-import Div from '../Div';
-import Slider from 'react-slick';
-import { Icon } from '@iconify/react';
+"use client";
+
+import React from "react";
+import Portfolio from "../Portfolio";
+import Div from "../Div";
+import Slider from "react-slick";
+import { Icon } from "@iconify/react";
 
 export default function PortfolioSlider2() {
   const portfolioData = [
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_31.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_31.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_32.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_32.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_33.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_33.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_34.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_34.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_31.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_31.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_32.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_32.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_33.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_33.jpeg",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_34.jpeg',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_34.jpeg",
     },
   ];
 
@@ -61,7 +63,7 @@ export default function PortfolioSlider2() {
     <div
       {...props}
       className={
-        'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -73,8 +75,8 @@ export default function PortfolioSlider2() {
     <div
       {...props}
       className={
-        'slick-next slick-arrow' +
-        (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}

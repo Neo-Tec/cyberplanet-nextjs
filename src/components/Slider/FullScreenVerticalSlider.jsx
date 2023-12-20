@@ -1,13 +1,13 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, Pagination, Navigation } from 'swiper';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Pagination, Navigation } from "swiper";
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import { Icon } from '@iconify/react';
-import parse from 'html-react-parser';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import Div from '../Div';
+import { Icon } from "@iconify/react";
+import parse from "html-react-parser";
+import "swiper/css";
+import "swiper/css/pagination";
+import Div from "../Div";
 
 export default function FullScreenVerticalSlider({ data }) {
   return (
@@ -20,7 +20,7 @@ export default function FullScreenVerticalSlider({ data }) {
           <Icon icon="bi:arrow-left" /> Prev
         </Div>
         <Swiper
-          direction={'vertical'}
+          direction={"vertical"}
           slidesPerView={1}
           spaceBetween={0}
           mousewheel={true}
@@ -32,9 +32,9 @@ export default function FullScreenVerticalSlider({ data }) {
           modules={[Mousewheel, Pagination, Navigation]}
           className="mySwiper"
           navigation={{
-            nextEl: '.image-swiper-button-next',
-            prevEl: '.image-swiper-button-prev',
-            disabledClass: 'swiper-button-disabled',
+            nextEl: ".image-swiper-button-next",
+            prevEl: ".image-swiper-button-prev",
+            disabledClass: "swiper-button-disabled",
           }}
         >
           {data.map((item, index) => (
@@ -45,7 +45,7 @@ export default function FullScreenVerticalSlider({ data }) {
               >
                 <Div className="cs-hero_text">
                   <h2 className="cs-hero_title">{parse(item.title)}</h2>
-                  <Link to={item.href} className="cs-btn cs-style1 cs-type1">
+                  <Link href={item.href} className="cs-btn cs-style1 cs-type1">
                     <span>View Case Study</span>
                   </Link>
                 </Div>

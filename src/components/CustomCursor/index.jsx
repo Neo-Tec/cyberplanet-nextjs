@@ -1,5 +1,7 @@
-import React from 'react';
-import './customcursor.scss';
+"use client";
+
+import React from "react";
+import "./customcursor.scss";
 
 const CustomCursor = () => {
   const cursorSm = React.useRef(null);
@@ -15,7 +17,7 @@ const CustomCursor = () => {
   });
 
   React.useEffect(() => {
-    document.addEventListener('mousemove', event => {
+    document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
 
       const mouseX = clientX;

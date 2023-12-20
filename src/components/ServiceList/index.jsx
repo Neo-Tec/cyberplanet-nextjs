@@ -1,54 +1,54 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import Div from '../Div';
-import './servicelist.scss';
+import Div from "../Div";
+import "./servicelist.scss";
 
 export default function ServiceList() {
   const serviceData = [
     {
-      title: 'WP Development',
+      title: "WP Development",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_7.jpeg',
-      href: '/service/service-details',
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+      imgUrl: "/images/service_7.jpeg",
+      href: "/service/service-details",
     },
     {
-      title: 'UI/UX Design',
+      title: "UI/UX Design",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_8.jpeg',
-      href: '/service/service-details',
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+      imgUrl: "/images/service_8.jpeg",
+      href: "/service/service-details",
     },
     {
-      title: 'Branding',
+      title: "Branding",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_9.jpeg',
-      href: '/service/service-details',
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+      imgUrl: "/images/service_9.jpeg",
+      href: "/service/service-details",
     },
     {
-      title: 'Social Ad Campaign',
+      title: "Social Ad Campaign",
       subtitle:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
-      imgUrl: '/images/service_10.jpeg',
-      href: '/service/service-details',
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.",
+      imgUrl: "/images/service_10.jpeg",
+      href: "/service/service-details",
     },
   ];
   const [active, setActive] = useState(0);
-  const handelActive = index => {
+  const handelActive = (index) => {
     setActive(index);
   };
   return (
     <Div className="cs-iconbox_3_list">
       {serviceData.map((item, index) => (
         <Div
-          className={`cs-hover_tab ${active === index ? 'active' : ''}`}
+          className={`cs-hover_tab ${active === index ? "active" : ""}`}
           key={index}
           onMouseEnter={() => handelActive(index)}
         >
-          <Link to={item.href} className="cs-iconbox cs-style3">
+          <Link href={item.href} className="cs-iconbox cs-style3">
             <>
               <Div className="cs-image_layer cs-style1 cs-size_md">
                 <Div className="cs-image_layer_in">

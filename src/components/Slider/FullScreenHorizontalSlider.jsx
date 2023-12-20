@@ -1,11 +1,13 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, Pagination, Navigation } from 'swiper';
+"use client";
+
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Pagination, Navigation } from "swiper";
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import { Icon } from '@iconify/react';
-import parse from 'html-react-parser';
-import Div from '../Div';
+import { Icon } from "@iconify/react";
+import parse from "html-react-parser";
+import Div from "../Div";
 
 export default function FullScreenHorizontalSlider({ data }) {
   return (
@@ -28,9 +30,9 @@ export default function FullScreenHorizontalSlider({ data }) {
         modules={[Mousewheel, Pagination, Navigation]}
         className="mySwiper"
         navigation={{
-          nextEl: '.image-swiper-button-next',
-          prevEl: '.image-swiper-button-prev',
-          disabledClass: 'swiper-button-disabled',
+          nextEl: ".image-swiper-button-next",
+          prevEl: ".image-swiper-button-prev",
+          disabledClass: "swiper-button-disabled",
         }}
       >
         {data.map((item, index) => (
@@ -39,7 +41,7 @@ export default function FullScreenHorizontalSlider({ data }) {
               className="cs-hero cs-style4 cs-bg"
               style={{ backgroundImage: `url(${item.imgUrl})` }}
             >
-              <Link to={item.href} className="cs-hero_link" />
+              <Link href={item.href} className="cs-hero_link" />
               <Div className="cs-hero_text">
                 <h2 className="cs-hero_title">{parse(item.title)}</h2>
               </Div>
