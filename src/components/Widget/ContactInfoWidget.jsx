@@ -36,8 +36,8 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          50 Wall Street Suite, 44150 <br />
-          Ohio, United States
+        Kishanganj,Bihar <br />
+
         </li>
       </ul>
     </>
