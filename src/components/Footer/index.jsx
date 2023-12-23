@@ -24,19 +24,19 @@ export default function Footer(
   const serviceMenu = [
     {
       title: 'UI/UX design',
-      href: '/service/service-details'
+      // href: '/service/service-details'
     },
     {
       title: 'WP development',
-      href: '/service/service-details'
+      // href: '/service/service-details'
     },
     {
       title: 'Digital marketing',
-      href: '/service/service-details'
+      // href: '/service/service-details'
     },
     {
       title: 'React development',
-      href: '/service/service-details'
+      // href: '/service/service-details'
     },
   ]
 

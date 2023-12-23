@@ -42,8 +42,8 @@ export default function ServicesPage() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="UI/UX design"
-                    link="/service/ui-ux-design"
-                    src="/images/service_1.jpeg"
+                    // link="/service/ui-ux-design"
+                    // src="/images/service_1.jpeg"
                     alt="Service"
                   />
                   <Spacing lg="0" md="30" />
