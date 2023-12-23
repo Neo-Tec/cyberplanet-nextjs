@@ -1,24 +1,26 @@
-import { Icon } from '@iconify/react';
-import React, { useEffect } from 'react';
-import { pageTitle } from '../../helper';
-import Div from '../Div';
-import PageHeading from '../PageHeading';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
+"use client";
+
+import { Icon } from "@iconify/react";
+import React, { useEffect } from "react";
+import { pageTitle } from "../../helper";
+import Div from "../Div";
+import PageHeading from "../PageHeading";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
+import ContactInfoWidget from "../Widget/ContactInfoWidget";
 
 export default function ContactPage() {
-  pageTitle('Contact Us');
+  pageTitle("Contact Us");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <PageHeading
+      {/* <PageHeading
         title="Contact Us"
         bgSrc="/images/contact_hero_bg.jpeg"
         pageLinkText="Contact"
-      />
+      /> */}
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Div className="row">
