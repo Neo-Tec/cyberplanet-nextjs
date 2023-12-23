@@ -1,32 +1,34 @@
-import React, { useEffect } from 'react';
-import { pageTitle } from '../../helper';
-import Cta from '../Cta';
-import FunFact from '../FunFact';
-import PageHeading from '../PageHeading';
-import Div from '../Div';
-import SectionHeading from '../SectionHeading';
-import TeamSlider from '../Slider/TeamSlider';
-import Spacing from '../Spacing';
+"use client";
+
+import React, { useEffect } from "react";
+import { pageTitle } from "../../helper";
+import Cta from "../Cta";
+import FunFact from "../FunFact";
+import PageHeading from "../PageHeading";
+import Div from "../Div";
+import SectionHeading from "../SectionHeading";
+import TeamSlider from "../Slider/TeamSlider";
+import Spacing from "../Spacing";
 
 export default function AboutPage() {
-  pageTitle('About');
+  pageTitle("About");
 
   const funfaceData = [
     {
-      title: 'Global Happy Clients',
-      factNumber: '40K',
+      title: "Global Happy Clients",
+      factNumber: "40K",
     },
     {
-      title: 'Project Completed',
-      factNumber: '50K',
+      title: "Project Completed",
+      factNumber: "50K",
     },
     {
-      title: 'Team Members',
-      factNumber: '245',
+      title: "Team Members",
+      factNumber: "245",
     },
     {
-      title: 'Digital products',
-      factNumber: '550',
+      title: "Digital products",
+      factNumber: "550",
     },
   ];
   useEffect(() => {

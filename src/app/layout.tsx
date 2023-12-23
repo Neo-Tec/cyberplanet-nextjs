@@ -27,7 +27,6 @@ export default function RootLayout({
       <body>
         <>
           <Header variant={""} />
-          <Home />
           {children}
           <CustomCursor />
           <Footer />
