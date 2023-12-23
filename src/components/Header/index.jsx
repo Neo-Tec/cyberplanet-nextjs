@@ -145,14 +145,16 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown> */}
                     </li>
-                    <li className="menu-item-has-children">
+                    <li
+                    //  className="menu-item-has-children"
+                    >
                       <Link
                         href="portfolio"
                         onClick={() => setMobileToggle(false)}
                       >
                         Portfolio
                       </Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -171,9 +173,9 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <Link href="blog" onClick={() => setMobileToggle(false)}>
                         Blog
                       </Link>
@@ -197,8 +199,8 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link href="/" onClick={() => setMobileToggle(false)}>
                         Pages
                       </Link>
@@ -246,6 +248,16 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
+                    </li> */}
+                    <li>
+                      <Link
+                        href="contact"
+                        onClick={() => {
+                          setMobileToggle(false);
+                        }}
+                      >
+                        Contact
+                      </Link>
                     </li>
                   </ul>
                   <span
