@@ -45,11 +45,11 @@ export default function Header({ variant }) {
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? "block" : "none"}` }}
                   >
-                    <li className="menu-item-has-children">
+                    <li>
                       <Link href="/" onClick={() => setMobileToggle(false)}>
                         Home
                       </Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -108,7 +108,7 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
                     <li>
                       <Link href="about" onClick={() => setMobileToggle(false)}>
