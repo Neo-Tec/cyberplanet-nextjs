@@ -1,107 +1,108 @@
-"use client"
-import { Icon } from '@iconify/react';
-import React, { useEffect } from 'react';
-import { useState } from 'react';
-import { pageTitle } from '../../helper';
-import Cta from '../Cta';
-import PageHeading from '../PageHeading';
-import Portfolio from '../Portfolio';
-import Div from '../Div';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
+"use client";
+
+import { Icon } from "@iconify/react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { pageTitle } from "../../helper";
+import Cta from "../Cta";
+import PageHeading from "../PageHeading";
+import Portfolio from "../Portfolio";
+import Div from "../Div";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
 
 export default function PortfolioPage() {
-  pageTitle('Portfolio');
-  const [active, setActive] = useState('all');
+  pageTitle("Portfolio");
+  const [active, setActive] = useState("all");
   const [itemShow, setItemShow] = useState(7);
   const portfolioData = [
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_4.jpeg',
-      category: 'ui_ux_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_4.jpeg",
+      category: "ui_ux_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_5.jpeg',
-      category: 'logo_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_5.jpeg",
+      category: "logo_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_6.jpeg',
-      category: 'web_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_6.jpeg",
+      category: "web_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_7.jpeg',
-      category: 'mobile_apps',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_7.jpeg",
+      category: "mobile_apps",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_8.jpeg',
-      category: 'ui_ux_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_8.jpeg",
+      category: "ui_ux_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_9.jpeg',
-      category: 'web_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_9.jpeg",
+      category: "web_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_10.jpeg',
-      category: 'logo_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_10.jpeg",
+      category: "logo_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_4.jpeg',
-      category: 'ui_ux_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_4.jpeg",
+      category: "ui_ux_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_5.jpeg',
-      category: 'logo_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_5.jpeg",
+      category: "logo_design",
     },
     {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_6.jpeg',
-      category: 'web_design',
+      title: "Colorful Art Work",
+      subtitle: "See Details",
+      href: "/portfolio/portfolio-details",
+      src: "/images/portfolio_6.jpeg",
+      category: "web_design",
     },
   ];
   const categoryMenu = [
     {
-      title: 'Web Design',
-      category: 'web_design',
+      title: "Web Design",
+      category: "web_design",
     },
     {
-      title: 'UI/UX Design',
-      category: 'ui_ux_design',
+      title: "UI/UX Design",
+      category: "ui_ux_design",
     },
     {
-      title: 'Mobile Apps',
-      category: 'mobile_apps',
+      title: "Mobile Apps",
+      category: "mobile_apps",
     },
     {
-      title: 'Logo Design',
-      category: 'logo_design',
+      title: "Logo Design",
+      category: "logo_design",
     },
   ];
 
@@ -122,12 +123,12 @@ export default function PortfolioPage() {
           <SectionHeading title="Some recent work" subtitle="Our Portfolio" />
           <Div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
-              <li className={active === 'all' ? 'active' : ''}>
-                <span onClick={() => setActive('all')}>All</span>
+              <li className={active === "all" ? "active" : ""}>
+                <span onClick={() => setActive("all")}>All</span>
               </li>
               {categoryMenu.map((item, index) => (
                 <li
-                  className={active === item.category ? 'active' : ''}
+                  className={active === item.category ? "active" : ""}
                   key={index}
                 >
                   <span onClick={() => setActive(item.category)}>
@@ -143,13 +144,13 @@ export default function PortfolioPage() {
           {portfolioData.slice(0, itemShow).map((item, index) => (
             <Div
               className={`${
-                index === 3 || index === 6 ? 'col-lg-8' : 'col-lg-4'
+                index === 3 || index === 6 ? "col-lg-8" : "col-lg-4"
               } ${
-                active === 'all'
-                  ? ''
+                active === "all"
+                  ? ""
                   : !(active === item.category)
-                  ? 'd-none'
-                  : ''
+                  ? "d-none"
+                  : ""
               }`}
               key={index}
             >
@@ -167,7 +168,7 @@ export default function PortfolioPage() {
 
         <Div className="text-center">
           {portfolioData.length <= itemShow ? (
-            ''
+            ""
           ) : (
             <>
               <Spacing lg="65" md="40" />
