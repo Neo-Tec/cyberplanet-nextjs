@@ -16,7 +16,7 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          +91 7630033481
+          +91 7630033481/6206976517
         </li>
         <li>
           {withIcon ? (

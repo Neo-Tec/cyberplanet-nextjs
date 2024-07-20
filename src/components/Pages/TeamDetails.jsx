@@ -29,9 +29,9 @@ export default function TeamDetails() {
           <Div className="col-lg-6 offset-xl-1">
             <Spacing lg='0' md='45'/>
             <Div className="cs-section_heading cs-style1">
-              <h2 className="cs-section_title">Melon Bulgery</h2>
+              <h2 className="cs-section_title">Artaza Sameen</h2>
               <Div className="cs-height_10 cs-height_lg_10" />
-              <h3 className="cs-section_subtitle">Product Designer</h3>
+              <h3 className="cs-section_subtitle">Full-Stack Developer</h3>
               <Div className="cs-height_5 cs-height_lg_5" />
               <Div className="cs-separator cs-accent_bg" />
               <Div className="cs-height_45 cs-height_lg_25" />

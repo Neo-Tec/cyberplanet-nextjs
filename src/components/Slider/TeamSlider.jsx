@@ -8,60 +8,60 @@ export default function TeamSlider() {
   /** Team Member Data **/
   const teamData = [
     {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/artaza_pic.jpg',
+      memberName: 'Artaza Sameen',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
-        linkedin: '/',
+        linkedin: 'https://www.linkedin.com/in/artaza-sameen-4b995b23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
     },
     {
-      memberImage: '/images/member_2.jpeg',
-      memberName: 'Olinaz Fushi',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/asim_pic.jpg',
+      memberName: 'Asim Tabrez',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
-        linkedin: '/',
+        linkedin: 'https://www.linkedin.com/in/asim-tabrez-6a0274284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        twitter: '/',
+        youtube: 'https://youtube.com/@asimtabrez517?si=iPFwM130Msibl1TM/',
+        facebook: 'https://www.facebook.com/profile.php?id=100041546256366/',
+      },
+    },
+    {
+      memberImage: '/images/zeeshan2pic.jpg',
+      memberName: 'Zeeshan Akthar',
+      memberDesignation: 'Full-Stack Developer',
+      memberSocial: {
+        linkedin: 'https://www.linkedin.com/in/zeeshanakhtarr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
     },
     {
-      memberImage: '/images/member_3.jpeg',
-      memberName: 'David Elone',
-      memberDesignation: 'React Developer',
+      memberImage: '/images/somad_pic.jpg',
+      memberName: 'Md.Somad',
+      memberDesignation: 'App Developer',
+      memberSocial: {
+        linkedin: 'https://www.linkedin.com/in/md-somad-8827ab256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        twitter: '/',
+        youtube: '/',
+        facebook: '/',
+      },
+    },
+   /* {
+      memberImage: '/images/artaza_pic.jpg',
+      memberName: 'Artaza Sameen',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
-    },
-    {
-      memberImage: '/images/member_4.jpeg',
-      memberName: 'Melina Opole',
-      memberDesignation: 'WP Developer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
-    {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
+    },*/
   ];
   /** Slider Settings **/
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (

@@ -74,7 +74,7 @@ export default function DigitalAgencyHome() {
       href: '/service/service-details',
     },
     {
-      title: 'React Developer',
+      title: 'Full-Stack Developer',
       href: '/service/service-details',
     },
   ];

@@ -34,30 +34,38 @@ export default function ContactPage() {
             <Spacing lg="0" md="50" />
           </Div>
           <Div className="col-lg-6">
-            <form action="#" className="row">
+            <form action="https://api.web3forms.com/submit" method="POST" className="row">
+            
               <Div className="col-sm-6">
+                
                 <label className="cs-primary_color">Full Name*</label>
-                <input type="text" className="cs-form_field" />
+                
+                <input type="text" className="cs-form_field" name="name" required/>
+
+                <Spacing lg="20" md="20" />
+              </Div>
+              
+              <Div className="col-sm-6">
+                <label className="cs-primary_color" >Email*</label>
+                <input type="hidden" name="access_key" value="7a7f2b6e-d61a-4a03-b311-63eb111e43f5"></input>
+                <input type="text" className="cs-form_field" name="email:" required />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
-                <label className="cs-primary_color">Email*</label>
-                <input type="text" className="cs-form_field" />
-                <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
-                <label className="cs-primary_color">Project Type*</label>
-                <input type="text" className="cs-form_field" />
+                <label className="cs-primary_color">Address*</label>
+                <input type="text" className="cs-form_field" name="Address:" required />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Mobile*</label>
-                <input type="text" className="cs-form_field" />
+                <input type="text" className="cs-form_field"name="Mobile:" required />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-12">
-                <label className="cs-primary_color">Mobile*</label>
+                <label className="cs-primary_color">Message*</label>
+
                 <textarea
+                 name="message" required
                   cols="30"
                   rows="7"
                   className="cs-form_field"
