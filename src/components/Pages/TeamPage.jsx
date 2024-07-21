@@ -11,9 +11,9 @@ export default function TeamPage() {
   pageTitle('Team');
   const teamData = [
     {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/artaza_pic.jpg',
+      memberName: 'Artaza Sameen',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -22,9 +22,9 @@ export default function TeamPage() {
       },
     },
     {
-      memberImage: '/images/member_2.jpeg',
-      memberName: 'Olinaz Fushi',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/asim_pic.jpg',
+      memberName: 'Asim Tabrez',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -33,9 +33,9 @@ export default function TeamPage() {
       },
     },
     {
-      memberImage: '/images/member_3.jpeg',
-      memberName: 'David Elone',
-      memberDesignation: 'React Developer',
+      memberImage: '/images/zeeshan2pic.jpg',
+      memberName: 'Zeeshan Akthar',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -44,9 +44,9 @@ export default function TeamPage() {
       },
     },
     {
-      memberImage: '/images/member_4.jpeg',
-      memberName: 'Melina Opole',
-      memberDesignation: 'WP Developer',
+      memberImage: '/images/somad_pic.jpg',
+      memberName: 'Md.Somad',
+      memberDesignation: 'App Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -54,50 +54,50 @@ export default function TeamPage() {
         facebook: '/',
       },
     },
-    {
-      memberImage: '/images/member_3.jpeg',
-      memberName: 'David Elone',
-      memberDesignation: 'React Developer',
+    /*{
+      memberImage: '/images/zeeshan2pic.jpg',
+      memberName: 'Zeeshan Akthar',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
-    },
-    {
-      memberImage: '/images/member_4.jpeg',
-      memberName: 'Melina Opole',
-      memberDesignation: 'WP Developer',
+    },*/
+   /*- {
+      memberImage: '/images/somad_pic.jpg',
+      memberName: 'Md.Somad',
+      memberDesignation: 'App Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
-    },
-    {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+    },*/
+   /* {
+      memberImage: '/images/artaza_pic.jpg',
+      memberName: 'Artaza Sameen',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
-    },
-    {
-      memberImage: '/images/member_2.jpeg',
-      memberName: 'Olinaz Fushi',
-      memberDesignation: 'Product Designer',
+    },*/
+    /*{
+      memberImage: '/images/asim_pic.jpg',
+      memberName: 'Asim Tabrez',
+      memberDesignation: 'Full-Stack Developer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
         youtube: '/',
         facebook: '/',
       },
-    },
+    },*/
   ];
 
   useEffect(() => {
